@@ -7,9 +7,9 @@ const socials = [
   {
     name: 'Instagram',
     icon: Instagram,
-    followers: '150K',
+    followers: '332k',
     color: 'from-pink-500 to-purple-500',
-    url: 'https://instagram.com',
+    url: 'https://www.instagram.com/kittyexplain',
   },
   {
     name: 'YouTube',
@@ -90,7 +90,7 @@ export const SocialSection = () => {
             Want to stay updated with all the cuteness? 🐱
           </p>
           <Button variant="hero" size="lg" asChild>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/kittyexplain" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-5 h-5" />
               Follow the Journey
             </a>

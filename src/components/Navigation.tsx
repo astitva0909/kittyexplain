@@ -51,7 +51,7 @@ export const Navigation = () => {
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-3xl">🐱</span>
-            <span className="font-script text-3xl text-gradient">Whiskers & Love</span>
+            <span className="font-script text-3xl text-gradient">Kitty Explains</span>
           </motion.a>
 
           {/* Desktop Navigation */}

@@ -44,7 +44,7 @@ export const HeroSection = () => {
               className="inline-flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-soft"
             >
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-foreground">Cat Mom & Content Creator</span>
+              <span className="text-sm font-medium text-foreground">Cat Content Creator</span>
             </motion.div>
 
             <motion.h1
@@ -54,7 +54,7 @@ export const HeroSection = () => {
               className="text-5xl md:text-7xl font-bold mb-6"
             >
               <span className="text-foreground">Hi, I'm </span>
-              <span className="font-script text-gradient">Mia</span>
+              <span className="font-script text-gradient">Kitty</span>
               <motion.span
                 className="inline-block ml-2"
                 animate={{ rotate: [0, 14, -8, 14, 0] }}
@@ -85,7 +85,7 @@ export const HeroSection = () => {
                 Meet My Cats
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/kittyexplain" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-5 h-5" />
                   Follow on Instagram
                 </a>

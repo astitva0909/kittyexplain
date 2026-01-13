@@ -14,21 +14,49 @@ export const ContactSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+    
+  //   // Simulate form submission
+  //   await new Promise(resolve => setTimeout(resolve, 1000));
+    
+  //   toast({
+  //     title: "Message sent! 💌",
+  //     description: "Thank you for reaching out! I'll get back to you soon.",
+  //   });
+    
+  //   setFormData({ name: '', email: '', message: '' });
+  //   setIsSubmitting(false);
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const res = await fetch("https://formspree.io/f/mlgejbyq", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
+
+  if (res.ok) {
     toast({
       title: "Message sent! 💌",
-      description: "Thank you for reaching out! I'll get back to you soon.",
+      description: "Check your inbox — you received a message.",
     });
-    
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
-  };
+
+    setFormData({ name: "", email: "", message: "" });
+  } else {
+    toast({
+      title: "Failed to send message",
+      description: "Please try again later.",
+    });
+  }
+
+  setIsSubmitting(false);
+};
+
 
   return (
     <section id="contact" className="py-24 gradient-hero relative overflow-hidden">
@@ -71,7 +99,7 @@ export const ContactSection = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-foreground">Email Me</h3>
-                      <p className="text-muted-foreground text-sm">hello@whiskersandlove.com</p>
+                      <p className="text-muted-foreground text-sm">singhaadi657@gmail.com</p>
                     </div>
                   </motion.div>
 

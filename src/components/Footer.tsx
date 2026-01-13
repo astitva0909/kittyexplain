@@ -14,13 +14,13 @@ export const Footer = () => {
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-3xl">🐱</span>
-            <span className="font-script text-2xl text-gradient">Whiskers & Love</span>
+            <span className="font-script text-2xl text-gradient">KittyExplains</span>
           </motion.div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
             {[
-              { icon: Instagram, url: 'https://instagram.com' },
+              { icon: Instagram, url: 'https://www.instagram.com/kittyexplain?igsh=aWhxeGk5MnU1YWZt' },
               { icon: Youtube, url: 'https://youtube.com' },
               { icon: Music2, url: 'https://tiktok.com' },
               { icon: Twitter, url: 'https://twitter.com' },
@@ -48,7 +48,7 @@ export const Footer = () => {
             >
               <Heart className="w-4 h-4 text-primary fill-primary" />
             </motion.span>
-            <span>© {currentYear} Whiskers & Love</span>
+            <span>© {currentYear}KittyExplains</span>
           </div>
         </div>
 

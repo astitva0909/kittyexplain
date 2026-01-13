@@ -1,35 +1,35 @@
 import { motion } from 'framer-motion';
 import { Play, Heart, MessageCircle, Share2 } from 'lucide-react';
 import { ScrollReveal } from '@/components/ScrollReveal';
-import catReel1 from '@/assets/cat-reel-1.jpg';
-import catReel2 from '@/assets/cat-reel-2.jpg';
-import catReel3 from '@/assets/cat-reel-3.jpg';
-import catReel4 from '@/assets/cat-reel-4.jpg';
+import catReel1 from '@/assets/cat-reel-1.jpeg';
+import catReel2 from '@/assets/cat-reel-2.jpeg';
+import catReel3 from '@/assets/cat-reel-3.jpeg';
+import catReel4 from '@/assets/cat-reel-4.jpeg';
 
 const reels = [
   {
     image: catReel1,
-    title: 'Yarn Time Fun! 🧶',
-    likes: '45.2K',
-    comments: '892',
+    title: 'How to loose belly Fat 🐱',
+    likes: '127K',
+    comments: '59',
   },
   {
     image: catReel2,
-    title: 'Sweater Weather 🧣',
-    likes: '62.1K',
-    comments: '1.2K',
+    title: 'Things Boys Love',
+    likes: '601K',
+    comments: '164',
   },
   {
     image: catReel3,
-    title: 'Flower Child 🌸',
-    likes: '78.5K',
-    comments: '1.5K',
+    title: 'Aftercare Explained by Cats',
+    likes: '1.2M',
+    comments: '291',
   },
   {
     image: catReel4,
-    title: 'Sleepy Time 😴',
-    likes: '93.8K',
-    comments: '2.1K',
+    title: 'Lamborghini Urus Explained by Cats',
+    likes: '16.8K',
+    comments: '7',
   },
 ];
 
@@ -117,7 +117,7 @@ export const ReelsSection = () => {
         {/* CTA */}
         <ScrollReveal className="text-center mt-12" delay={0.5}>
           <motion.a
-            href="https://instagram.com"
+            href="https://www.instagram.com/kittyexplain"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"

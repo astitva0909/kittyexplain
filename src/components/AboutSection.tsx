@@ -77,17 +77,16 @@ export const AboutSection = () => {
             <ScrollReveal direction="right">
               <span className="text-primary font-medium">About Me</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-2 text-foreground">
-                A Cat Mom's{' '}
+                A Cat Dad's{' '}
                 <span className="font-script text-gradient">Love Story</span> 💕
               </h2>
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={0.2}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hey there, lovely! I'm Mia, a devoted cat mom and content creator on a mission 
-                to fill your feed with the most adorable, heartwarming cat moments. What started 
-                as sharing silly photos of my cats turned into a beautiful community of cat lovers 
-                from around the world!
+                Hey there, lovely! I'm a devoted cat dad and content creator on a mission 
+                to fill your feed with the most adorable, heartwarming cat moments , 
+                where cats will explain you the mysteris of life
               </p>
             </ScrollReveal>
 
